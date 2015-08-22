@@ -1,0 +1,28 @@
+.interface-des {
+    margin: 20px 10px;
+    border: 1px dashed #cad5e2;
+    background-color: #fff;
+    font-size: 12px;
+    color: #397de8;
+    padding: 10px;
+}
+.interface-des code{
+    font-size: 14px;
+}
+.interface-des p {
+    margin-bottom: 10px;
+}
+
+.interface-des .commonBtn {
+    margin: 0 10px;
+}
+
+.hid {
+    display: none;
+}
+.demo{
+    padding-top: 100px;
+    background-color:#fff;
+    margin: 20px 10px;
+}
+

@@ -1,0 +1,222 @@
+html, body {
+    min-width: 1024px;
+}
+
+/*通用表单样式：begin*/
+.commonItem {
+    display: inline-block;
+    margin: 10px 14px 10px 0;
+}
+
+input[type=text], select {
+    height: 28px;
+    width: 128px;
+    border: 1px solid #aeaeae;
+    text-indent: 5px;
+    font-size: 14px;
+    margin: 0 6px;
+}
+
+input[type=text].long {
+    width: 148px;
+}
+
+input[type=text]:focus,
+select:focus {
+    border: 1px solid #397de8;
+}
+
+.commonBtn {
+    background-color: #397de8;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 0 12px;
+    border: 0;
+    outline: 0;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+
+.commonBtn:hover {
+    outline: none;
+    border: 0;
+    background-color: #0c7cd2
+}
+
+.commonBtn.black {
+    background-color: #aeaeae;
+    cursor: not-allowed;
+}
+
+.commonBtn.black:hover {
+    background-color: #aeaeae;
+}
+
+/*通用表单样式：end*/
+
+/*分页组件样式：begin*/
+.pagination_area {
+    background-color: #fff;
+    /*overflow: hidden;*/
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 50px;
+}
+
+.data-bottom {
+    height: 58px;
+}
+
+.size-select {
+    width: 58px;
+    height: 28px;
+    border: 1px solid #bfbfbf;
+    color: #397de8;
+    line-height: 28px;
+    text-indent: 12px;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 37px;
+    z-index: 10;
+}
+
+.size-select .icon-triangle {
+    display: inline-block;
+    width: 11px;
+    height: 4px;
+    background: url(../img/icon-triangle.png) no-repeat 0 0;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+.data-pagination {
+    height: 58px;
+    line-height: 58px;
+}
+
+.items {
+    margin: 0 25px 0 48px;
+}
+
+.data-pagination {
+    color: #2f3744;
+    font-size: 12px;
+}
+
+.data-pagination .dp-type1:first-child,
+.data-pagination .dp-type5 {
+    border-left: 1px solid #bfbfbf;
+}
+
+.data-pagination .dp-type1 {
+    width: 60px;
+}
+
+.data-pagination .dp-type4 {
+    width: 48px;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #bfbfbf;
+    border-top: 1px solid #bfbfbf;
+    text-indent: 14px;
+}
+
+.data-pagination .dp-type4:focus {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.data-pagination .dp-type2,
+.data-pagination .dp-type3,
+.data-pagination .dp-type5 {
+    width: 31px;
+}
+
+.data-pagination .dp-type1,
+.data-pagination .dp-type2,
+.data-pagination .dp-type3,
+.data-pagination .dp-type5 {
+    display: inline-block;
+    border-top: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    line-height: 28px;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.data-pagination .dp-type4 {
+    float: left;
+    margin-top: 15px;
+}
+
+.dp-type1 {
+    height: 28px;
+}
+
+.dp-type6 {
+    padding: 0 12px;
+}
+
+.data-pagination .dp-type1.disabled {
+    color: #bfbfbf;
+    cursor: not-allowed;
+}
+
+.data-pagination .dp-type2.active,
+.data-pagination .dp-type2:hover,
+.data-pagination .dp-type1:not(.disabled):hover,
+.data-pagination .dp-type5:hover {
+    background-color: #397de8;
+    color: #FFF;
+}
+
+.size-panel {
+    position: absolute;
+    bottom: 12px;
+    left: 37px;
+    width: 58px;
+    z-index: 9;
+}
+
+.size-panel li {
+    display: block;
+    width: 58px;
+    height: 28px;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    color: #397de8;
+    line-height: 28px;
+    text-indent: 12px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.size-panel li:first-child {
+    border-top: 1px solid #bfbfbf;
+}
+
+.size-panel li:hover {
+    background-color: #e0e0e0;
+}
+
+.ssc{
+    position: absolute;
+    top: 23px;
+    left: 75px;
+    z-index: 11;
+}
+/*分页组件样式:end*/

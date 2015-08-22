@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>分页组件</title>
+    <link rel="stylesheet" href="css/common/base.css"/>
+    <link rel="stylesheet" href="css/common/tf_pagination.css"/>
+    <link rel="stylesheet" href="css/page/demo.css"/>
+    <link rel="stylesheet" href="js/weight/highlight/styles/googlecode.css" />
+</head>
+<body>
+    <div id="J_pagination" class="demo"></div>
+    <!--<div id="J_pagination" class="demo">-->
+        <!--<div class="commonDiv pagination_area clearfix" data-pageSize="" data-currentPage="">-->
+            <!--<div class="data-bottom fn-fl fn-re">-->
+                <!--<div class="size-select">10<i class="icon-triangle"></i></div>-->
+                <!--<ul class="size-panel" style="display: none;">-->
+                    <!--<li>30</li>-->
+                    <!--<li>20</li>-->
+                    <!--<li>10</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="data-pagination fn-fr">-->
+                <!--添加class[disabled]，禁用上一页或下一页-->
+                <!--<span  class="dp-type dp-type1 disabled">上一页</span>-->
+                <!--<span  class="dp-type dp-type2 active">1</span>-->
+                <!--<span  class="dp-type dp-type2">2</span>-->
+                <!--<span  class="dp-type dp-type2">3</span>-->
+                <!--<span  class="dp-type3">...</span>-->
+                <!--<span  class="dp-type dp-type2">10</span>-->
+                <!--<span  class="dp-type dp-type1">下一页</span>-->
+                <!--<input type="text" class="dp-type4 J_num" autocomplete="off"/>-->
+                <!--<span class="dp-type dp-type5">Go</span>-->
+                <!--<span class="dp-type6 J_totalCount">共100条</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/tf_pagination.js"></script>
+<script src="js/weight/highlight/highlight.pack.js"></script>
+<div class="interface-des">
+<p>使用说明：</p>
+<pre>
+<code>
+&lt;div id="J_pagination"&gt;&lt;div/&gt;
+</code>
+<code>
+//初始化
+$('#J_pagination').tfPagination({
+    totalCount: 80,
+    currentPage: 4,
+    pageSize: 10,
+    maxLabelNumber: 7, //最多展示的页码数
+    handler: function(currentPage,pageSize){  //currentPage发生变化时触发的函数
+         alert('currentPage:'+currentPage+'/n'+'paseSize:'+pageSize);
+    }
+});
+</code>
+</pre>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+<script>
+    $('#J_pagination').tfPagination({
+        totalCount: 80,
+        currentPage: 4,
+        pageSize: 10,
+        maxLabelNumber: 7,
+        handler: function(currentPage,pageSize){
+             alert('currentPage:'+currentPage+'\n'+'paseSize:'+pageSize+'请求数据...');
+        }
+    });
+</script>
+<!--接口说明，开发完成后删掉：end-->
+
+</body>
+</html>

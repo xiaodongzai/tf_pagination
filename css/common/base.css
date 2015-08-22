@@ -1,0 +1,352 @@
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0px;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+body {
+    color: #252525;
+    background: #f1f1f1;
+    font: 12px "microsoft yahei";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    outline: none;
+}
+
+.w1002 {
+    margin: 0px auto;
+    width: 1002px;
+}
+
+/*背景颜色*/
+.bg-cOrange {
+    background: #ec6110;
+}
+
+.bg-cWhite {
+    background: #fff;
+}
+
+.bg-cGray {
+    background: #f6f6f6;
+}
+
+/*inputIE7下光标居中*/
+input {
+    *line-height: 100%;
+}
+
+/*边框颜色*/
+.br-cGray {
+    border: solid 1px #d9d9d9;
+}
+
+/*文字排版*/
+.ft-12 {
+    font-size: 12px;
+}
+
+.ft-14 {
+    font-size: 14px;
+}
+
+.ft-16 {
+    font-size: 16px;
+}
+
+.ft-18 {
+    font-size: 18px;
+}
+
+.ft-24 {
+    font-size: 24px;
+}
+
+.ft-bold {
+    font-weight: bold;
+}
+
+.ft-normal {
+    font-weight: normal;
+}
+
+.fn-wryh {
+    font-family: "microsoft yahei";
+}
+
+.fn-em2 {
+    text-indent: 2em;
+}
+
+.fn-unl {
+    text-decoration: underline;
+}
+
+.fn-nounl {
+    text-decoration: none;
+}
+
+/*定位*/
+.fn-tl {
+    text-align: left;
+}
+
+.fn-tc {
+    text-align: center;
+}
+
+.fn-tr {
+    text-align: right;
+}
+
+.fn-fl {
+    float: left;
+}
+
+.fn-fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fn-vm {
+    vertical-align: middle;
+}
+
+.fn-re {
+    position: relative;
+}
+
+.fn-abs {
+    position: absolute;
+}
+
+.fn-abs-right {
+    position: absolute;
+    right: 0;
+}
+
+.fn-hide {
+    display: none;
+}
+
+/*长度高度*/
+.w990 {
+    width: 990px;
+    margin: 0px auto;
+}
+
+/*边距*/
+.fn-m0 {
+    margin: 0 auto;
+}
+
+.fn-m10 {
+    margin: 10px;
+}
+
+.fn-ml5 {
+    margin-left: 5px;
+}
+
+.fn-ml10 {
+    margin-left: 10px;
+}
+
+.fn-ml14 {
+    margin-left: 14px;
+}
+
+.fn-ml20 {
+    margin-left: 20px;
+}
+
+.fn-mr5 {
+    margin-right: 5px;
+}
+
+.fn-mr10 {
+    margin-right: 10px;
+}
+
+.fn-mb5 {
+    margin-bottom: 5px;
+}
+
+.fn-mb10 {
+    margin-bottom: 10px;
+}
+
+.fn-mt5 {
+    margin-top: 5px;
+}
+
+.fn-mt10 {
+    margin-top: 10px;
+}
+
+.fn-mt20 {
+    margin-top: 20px;
+}
+
+.fn-mb20 {
+    margin-bottom: 20px;
+}
+
+.fn-p10 {
+    padding: 10px;
+}
+
+.fn-p20 {
+    padding: 20px;
+}
+
+.fn-pl5 {
+    padding-left: 5px;
+}
+
+.fn-pl10 {
+    padding-left: 10px;
+}
+
+.fn-pl15 {
+    padding-left: 15px;
+}
+
+.fn-pr5 {
+    padding-right: 5px;
+}
+
+.fn-pr10 {
+    padding-right: 10px;
+}
+
+.fn-pb5 {
+    padding-bottom: 5px;
+}
+
+.fn-pb10 {
+    padding-bottom: 10px;
+}
+
+.fn-pt5 {
+    padding-top: 5px;
+}
+
+.fn-pt10 {
+    padding-top: 10px;
+}
+
+/*字体颜色*/
+.fn-cWhite {
+    color: #f8feff;
+}
+
+.fn-cBlue {
+    color: #1560ea;
+}
+
+.fn-cRed {
+    color: #ff0000;
+}
+
+.fn-cGray6 {
+    color: #666;
+}
+
+.fn-cGray3 {
+    color: #3f3f3f;
+}
+
+.fn-cGray9 {
+    color: #999;
+}
+
+.fn-cOrange {
+    color: #eb8831;
+}
+
+.fn-cGreen {
+    color: #86c420;
+}
+
+.fn-pointer {
+    cursor: pointer;
+}
+
+.fn-nobg {
+    background: none;
+}
+
+.fn-noborder {
+    border: none;
+}
+
+.fn-inlineB {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.fn-overflowH {
+    overflow: hidden;
+}
+
+.fn-cGrayAe{
+    color: #aeaeae;
+}
