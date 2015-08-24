@@ -15,7 +15,6 @@ $.fn.tfPagination = function () {
         currentPageSize: 10,
         maxLabelNumber: 5,
         handler: function () {
-            //alert('currentPage:'+currentPage+'/n'+'paseSize:'+pageSize);
         }
     };
 
@@ -115,16 +114,17 @@ $.fn.tfPagination = function () {
             });
         if(currentLabel==null){
 
+            function setLabel(i){
+                labelArr.eq(middleLabelIndex-1*i).text(labelArr.eq(middleLabelIndex-2*i).text()/1+1*i).addClass('dp-type2');
+                labelArr.eq(middleLabelIndex+1*i).text(currentPage).addClass('dp-type2');
+                labelArr.eq(middleLabelIndex).text('...').addClass('dp-type3').removeClass('dp-type2');
+                currentLabel = labelArr.eq(middleLabelIndex+1*i);
+            }
+
             if((currentPage+1)==labelArr.eq(middleLabelIndex+2).text()){
-                labelArr.eq(middleLabelIndex-1).text(labelArr.eq(middleLabelIndex-2).text()/1+1).addClass('dp-type2');
-                labelArr.eq(middleLabelIndex+1).text(currentPage).addClass('dp-type2');
-                labelArr.eq(middleLabelIndex).text('...').addClass('dp-type3').removeClass('dp-type2');
-                currentLabel = labelArr.eq(middleLabelIndex+1);
+                setLabel(1);
             }else if((currentPage-1)==labelArr.eq(middleLabelIndex-2).text()){
-                labelArr.eq(middleLabelIndex+1).text(labelArr.eq(middleLabelIndex+2).text()/1-1).addClass('dp-type2');
-                labelArr.eq(middleLabelIndex-1).text(currentPage).addClass('dp-type2');
-                labelArr.eq(middleLabelIndex).text('...').addClass('dp-type3').removeClass('dp-type2');
-                currentLabel = labelArr.eq(middleLabelIndex-1);
+                setLabel(-1);
             }
             else{
                 currentLabel = labelArr.eq(middleLabelIndex);
@@ -140,7 +140,7 @@ $.fn.tfPagination = function () {
 
         //边界值判定
         var prevPageLabel = labelArr.eq(0),
-            nextPageLabel = labelArr.eq(maxLabelNum+1);
+            nextPageLabel = labelArr.eq(Math.min(maxLabelNum,num)+1);
         if(currentPage==1){
             prevPageLabel.addClass('disabled');
         }else{
@@ -211,6 +211,5 @@ $.fn.tfPagination = function () {
         params.pageSize = pageSize;
         params.currentPage = 1;
         initPaginationWithParams(params.totalCount,1,pageSize,params.maxLabelNumber);
-        //params.handler();
     });
 };
